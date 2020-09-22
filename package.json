@@ -1,0 +1,31 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontity project",
+  "keywords": [
+    "frontity"
+  ],
+  "scripts": {
+    "dev": "frontity dev",
+    "build": "frontity build",
+    "serve": "frontity serve"
+  },
+  "prettier": {},
+  "dependencies": {
+    "@frontity/core": "^1.8.0",
+    "@frontity/head-tags": "^1.0.7",
+    "@frontity/html2react": "^1.3.4",
+    "@frontity/mars-theme": "./packages/mars-theme",
+    "@frontity/tiny-router": "^1.2.1",
+    "@frontity/wp-source": "^1.8.4",
+    "frontend": "file:packages/frontend",
+    "frontity": "^1.10.1",
+    "history": "^5.0.0",
+    "html-react-parser": "^0.14.0",
+    "node-fetch": "^2.6.1",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "url-pattern": "^1.0.3"
+  }
+}
