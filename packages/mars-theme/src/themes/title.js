@@ -39,15 +39,15 @@ const Title = ({ state, actions }) => {
     // Add titles to 404's.
     title = `404 Not Found - ${state.frontity.title}`;
   }
-
+  console.log(yoastHead);
   return yoastHead ? (
     <Head >
       {parse(yoastHead)}
       <link rel="icon"
         alt="logo"
         type="image/png"
-        href="http://www.mylocalwp.com/wp-content/uploads/favicon.png"></link>
-      <link href='http://www.mylocalwp.com/wp-content/uploads/favicon.png' rel="apple-touch-icon" />
+        href="http://frontity.funnydef.com/wp-content/uploads/favicon.png"></link>
+      <link href='http://frontity.funnydef.com/wp-content/uploads/favicon.png' rel="apple-touch-icon" />
       <html lang="en" />
     </Head>
   ) : null;

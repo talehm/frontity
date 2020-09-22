@@ -3,7 +3,7 @@ const settings = {
   "name": "my-app",
   "state": {
     "frontity": {
-      "url": "http://www.mylocalwp.com",
+      "url": "https://frontity.funnydef.com",
       "title": "Development Blog",
       "description": "Taleh Blog"
     }
@@ -36,7 +36,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "api": "http://www.mylocalwp.com/wp-json",
+          "api": "https://frontity.funnydef.com/wp-json",
           params: {
             per_page: 10,
             type: ["post"],

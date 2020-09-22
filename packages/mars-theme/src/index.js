@@ -60,9 +60,9 @@ const marsTheme = {
       getYoastHead: ({ state }) => {
         fetch(state.source.api + '/yoast/v1/get_head?url=' + state.frontity.url + state.router.link, {
           method: "GET",
-          headers: {
+          /* headers: {
             'Content-Type': 'application/json',
-          }
+          } */
         })
           .then(res => res.json())
           .then(data => state.theme.yoastHead = data.head)
@@ -85,9 +85,9 @@ const marsTheme = {
         const postType = match.postType
         fetch(state.source.api + '/tags/' + postType, {
           method: "GET",
-          headers: {
+          /* headers: {
             'Content-Type': 'application/json',
-          }
+          } */
         })
           .then(res => res.json())
           .then(data => state.theme.tags = data)
@@ -98,9 +98,9 @@ const marsTheme = {
         const postType = match.postType
         fetch(state.source.api + '/categories/' + postType, {
           method: "GET",
-          headers: {
+          /* headers: {
             'Content-Type': 'application/json',
-          }
+          } */
         })
           .then(res => res.json())
           .then(data => state.theme.categories = data)
